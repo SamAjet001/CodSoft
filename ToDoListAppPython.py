@@ -17,17 +17,17 @@ def deleteTask():
     listTasks()
     try:
         taskToDelete = int(input("Enter the # of the you want to delete: "))
-        if taskToDelete >=0 and taskToDelete < len(tasks):
+        if taskToDelete >=0  and taskToDelete < len(tasks):
             tasks.pop(taskToDelete)
             print(f"Task {taskToDelete} has been removed.")
         else:
-            print(f"Task #{taskToDelete} was not found.")   
+            print(f"Task #(taskToDelete) was not found.")
     except:
-        print("Invvalid input.")
+        print("Invalid input.")
 
 if __name__ == "__main__":
     ### Create a loop to run the app
-    print("Welcome to the to the to do list app : )")
+    print("Welcome to the to do list app : )")
     while True:
         print("\n")
         print("Please select one of the following options")
@@ -37,7 +37,7 @@ if __name__ == "__main__":
         print("3. List tasks")
         print("4. Quit")
 
-        choice = input("Enter your choice: ")
+        choice = input("Enter your choices: ")
 
         if(choice == "1"):
             addTask()
